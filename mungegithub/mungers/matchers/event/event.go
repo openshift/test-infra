@@ -107,7 +107,7 @@ func (c CreatedBefore) Match(event *github.IssueEvent) bool {
 
 // MungeBotActor returns a matcher that checks if the event was completed by MungeBot
 func MungeBotActor() Matcher {
-	return Actor("k8s-merge-robot")
+	return Actor("openshift-merge-robot")
 }
 
 // JenkinsBotActor returns a matcher that checks if the event was completed by JenkinsBot

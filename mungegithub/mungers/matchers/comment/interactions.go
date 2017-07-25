@@ -64,7 +64,7 @@ func (c *CommandArguments) Match(comment *Comment) bool {
 
 // MungeBotAuthor creates a matcher to find mungebot comments
 func MungeBotAuthor() Matcher {
-	return AuthorLogin("k8s-merge-robot")
+	return AuthorLogin("openshift-merge-robot")
 }
 
 // JenkinsBotAuthor creates a matcher to find jenkins bot comments

@@ -30,7 +30,7 @@ import (
 
 const (
 	// BotName is the name of merge-bot
-	BotName = "k8s-merge-robot"
+	BotName = "openshift-merge-robot"
 )
 
 // UserSet is a set a of users

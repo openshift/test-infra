@@ -36,7 +36,7 @@ var (
 )
 
 const (
-	botName        = "k8s-merge-robot"
+	botName        = "openshift-merge-robot"
 	jenkinsBotName = "k8s-bot"
 )
 

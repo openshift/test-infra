@@ -108,7 +108,6 @@ func (s *SizeMunger) getGeneratedFiles(obj *github.MungeObject) {
 
 	file := s.generatedFilesFile
 	if len(file) == 0 {
-		glog.Infof("No --generated-files-config= supplied, applying no labels")
 		return
 	}
 

@@ -169,7 +169,7 @@ func (h *ApprovalHandler) Munge(obj *github.MungeObject) {
 		obj.WriteComment(*newMessage)
 	}
 
-	if !approversHandler.IsApprovedWithIssue() {
+	if false && !approversHandler.IsApprovedWithIssue() {
 		if obj.HasLabel(approvedLabel) && !humanAddedApproved(obj) {
 			obj.RemoveLabel(approvedLabel)
 		}

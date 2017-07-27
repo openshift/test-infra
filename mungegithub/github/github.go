@@ -50,7 +50,7 @@ const (
 
 	// This should be >2x as long as it normally takes for a PR
 	// to complete, to avoid congestion collapse in the queue.
-	prMaxWaitTime = 2 * time.Hour
+	prMaxWaitTime = 4 * time.Hour
 
 	headerRateRemaining = "X-RateLimit-Remaining"
 	headerRateReset     = "X-RateLimit-Reset"

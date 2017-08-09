@@ -1,0 +1,13 @@
+# Create with 'kubectl create cm config --from-file=config.yaml'
+---
+metrics:
+- name: "test_pull_request_origin_extended_conformance_install_update"
+- name: "test_pull_request_origin_extended_conformance_gce"
+- name: "test_pull_request_origin_end_to_end"
+- name: "test_pull_request_origin_integration"
+- name: "test_pull_request_origin_extended_templates"
+- name: "test_pull_request_origin_extended_networking_minimal"
+- name: "test_pull_request_origin_cmd"
+- name: "test_pull_request_origin_unit"
+- name: "test_pull_request_origin_cross"
+- name: "test_pull_request_origin_verify"

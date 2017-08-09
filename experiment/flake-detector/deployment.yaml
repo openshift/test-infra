@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/path: /prometheus
+    prometheus.io/port: "8080"
+    prometheus.io/scrape: "true"
+  labels:
+    component: flake-detector
+  name: flake-detector
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    component: flake-detector
+  type: ClusterIP
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: flake-detector
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        component: flake-detector
+    spec:
+      containers:
+      - image: quay.io/kargakis/flake-detector:0.1
+        name: flake-detector
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        volumeMounts:
+        - mountPath: /etc/config
+          name: config
+      volumes:
+      - configMap:
+          defaultMode: 420
+          name: config
+        name: config

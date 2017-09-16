@@ -13,9 +13,10 @@
 	% else
 		{{job}}
 	% endif
-	#{{build}}</h1>
-	<p><a href="/builds{{job_dir}}">Recent runs</a><br>
-       <a href="https://ci.openshift.redhat.com/jenkins/job/{{job}}/{{build}}/">View job in Jenkins</a><br>
+	<div>#{{build}}</div></h1>
+	<p>
+		<a href="/builds{{job_dir}}">Recent runs</a> |
+		<a href="https://ci.openshift.redhat.com/jenkins/job/{{job}}/{{build}}/">View job in Jenkins</a>
 % endblock
 % block content
 <div id="summary">

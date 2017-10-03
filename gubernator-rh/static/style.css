@@ -19,10 +19,16 @@ body {
     text-align: center;
 }
 #header img {
-    width: 233px;
-    height: 100px;
+    width: 100px;
+    height: 120px;
     float: left;
     padding-left: 20px;
+}
+#header h1 {
+    font-size: 1.7em;
+}
+#header h1 div {
+    font-size: 0.6em;
 }
 #summary {
     text-align: center;

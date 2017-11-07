@@ -93,12 +93,14 @@ div#log {
 div#log hr {
   display: none;
 }
+
 .nav {
   padding: 0;
 }
 .nav li {
   background-color: #e3e9ff;
 }
+
 pre.error {
   border-radius: 5px;
   margin: 20px;

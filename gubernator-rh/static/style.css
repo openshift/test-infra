@@ -47,6 +47,9 @@ body {
   font-size: 16px;
   margin-bottom: 0;
   margin-top: 6px;
+}
+#header p {
+  font-size: 12px;
   text-align: center;
 }
 #header p a {

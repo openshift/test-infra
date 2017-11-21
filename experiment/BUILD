@@ -30,6 +30,7 @@ filegroup(
         "//experiment/commenter:all-srcs",
         "//experiment/manual-trigger:all-srcs",
         "//experiment/refresh:all-srcs",
+        "//experiment/vendor-syncer:all-srcs",
     ],
     tags = ["automanaged"],
     visibility = ["//visibility:public"],

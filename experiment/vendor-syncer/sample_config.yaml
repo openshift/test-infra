@@ -1,0 +1,11 @@
+---
+repositories:
+  # This key gets matched with 'UPSTREAM: containers/image: ...' message.
+  "containers/image":
+    # forkRepository represents the location of fork repository
+    forkRepository: github.com/foo/containers-image
+    # forkDefaultBranch represents the branch name where we will apply patches
+    forkDefaultBranch: release-1.0
+    # vendorPath is used for patch generation and applying where we need to
+    # strip this path.
+    vendorPath: vendor/github.com/containers/image

@@ -41,6 +41,8 @@ jobs:
     - test_pull_request_crio_ami_fedora
     - test_pull_request_crio_ami_rhel
     - test_pull_request_crio_e2e_fedora
+    - test_pull_request_crio_e2e_features_fedora
     - test_pull_request_crio_e2e_rhel
+    - test_pull_request_crio_e2e_features_rhel
     - test_pull_request_crio_integration_fedora
     - test_pull_request_crio_integration_rhel

@@ -2532,6 +2532,10 @@ test_groups:
   gcs_prefix: origin-federated-results/pr-logs/directory/test_pull_request_crio_e2e_fedora
 - name: test_pull_request_crio_e2e_rhel
   gcs_prefix: origin-federated-results/pr-logs/directory/test_pull_request_crio_e2e_rhel
+- name: test_pull_request_crio_e2e_features_fedora
+  gcs_prefix: origin-federated-results/pr-logs/directory/test_pull_request_crio_e2e_features_fedora
+- name: test_pull_request_crio_e2e_features_rhel
+  gcs_prefix: origin-federated-results/pr-logs/directory/test_pull_request_crio_e2e_features_rhel
 # Istio Prow Presubmits
 - name: istio-presubmit
   gcs_prefix: istio-prow/directory/istio-presubmit

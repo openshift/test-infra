@@ -263,7 +263,7 @@ func getReviewers(rc reviewersClient, author string, files []github.PullRequestC
 		requiredReviewers.Insert(rc.RequiredReviewers(file.Filename).UnsortedList()...)
 
 		fileUnusedLeafs := rc.LeafReviewers(file.Filename).Difference(reviewers).Difference(authorSet)
-		if fileUnusedLeafs.Len() == 0 {
+		if fileUnusedLeafs.Len() == 0 || minReviewers <= 0 {
 			continue
 		}
 		leafReviewers = leafReviewers.Union(fileUnusedLeafs)
